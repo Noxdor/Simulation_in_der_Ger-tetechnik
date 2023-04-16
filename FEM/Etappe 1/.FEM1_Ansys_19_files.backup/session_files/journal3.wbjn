@@ -1,0 +1,19 @@
+# encoding: utf-8
+# 2023 R1
+SetScriptVersion(Version="23.1.153")
+system1 = GetSystem(Name="SYS")
+model1 = system1.GetContainer(ComponentName="Model")
+model1.Edit()
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
+system2 = GetSystem(Name="SYS 1")
+system2.Copy(KeepConnections=True)
+template1 = GetTemplate(
+    TemplateName="Modal",
+    Solver="ANSYS")
+system3 = GetSystem(Name="SYS 2")
+system4 = template1.ReplaceSystem(System=system3)
+system1.DisplayText = "Fest"
+system2.DisplayText = "Spiel"
+Save(Overwrite=True)

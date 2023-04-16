@@ -1,0 +1,98 @@
+# encoding: utf-8
+# 2023 R1
+SetScriptVersion(Version="23.1.153")
+template1 = GetTemplate(
+    TemplateName="Static Structural",
+    Solver="ANSYS")
+system1 = template1.CreateSystem()
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+geometry1.SetFile(FilePath="C:/Users/lenna/Desktop/FEM/Etappe 1/Lasche_19.step")
+Save(Overwrite=True)
+favorites1 = EngData.LoadFavoriteItems()
+engineeringData1 = system1.GetContainer(ComponentName="Engineering Data")
+material1 = engineeringData1.GetMaterial(Name="Baustahl")
+material1.DisplayName = "C35"
+matlProp1 = material1.GetProperty(Name="Density")
+matlProp1.SetData(
+    Variables=["Density"],
+    Values=[["7840 [kg m^-3]"]])
+matlProp2 = material1.GetProperty(Name="Elasticity")
+matlProp2.SetData(
+    Variables=["Young's Modulus"],
+    Values=[["200000000000 [Pa]"]])
+matlProp2.SetData(
+    Variables=["Young's Modulus"],
+    Values=[["206000000000 [Pa]"]])
+matlProp2.SetVariableProperty(
+    VariableName="Young's Modulus",
+    Property="Unit",
+    Value="MPa")
+matlProp2.SetData(
+    Variables=["Young's Modulus"],
+    Values=[["206000 [MPa]"]])
+matlProp2.SetVariableProperty(
+    VariableName="Young's Modulus",
+    Property="Unit",
+    Value="GPa")
+matlProp2.SetData(
+    Variables=["Young's Modulus"],
+    Values=[["206 [GPa]"]])
+matlProp2.SetVariableProperty(
+    VariableName="Young's Modulus",
+    Property="Unit",
+    Value="Pa")
+matlProp2.SetData(
+    Variables=["Young's Modulus"],
+    Values=[["206000000000 [Pa]"]])
+matlProp2.SetVariableProperty(
+    VariableName="Young's Modulus",
+    Property="Unit",
+    Value="GPa")
+matlProp2.SetData(
+    Variables=["Young's Modulus"],
+    Values=[["206 [GPa]"]])
+matlProp2.SetVariableProperty(
+    VariableName="Young's Modulus",
+    Property="Unit",
+    Value="Pa")
+matlProp2.SetData(
+    Variables=["Young's Modulus"],
+    Values=[["206000000000 [Pa]"]])
+matlProp3 = material1.GetProperty(Name="Tensile Yield Strength")
+matlProp3.SetData(
+    Variables=["Tensile Yield Strength"],
+    Values=[["4.1 [Pa]"]])
+matlProp3.SetData(
+    Variables=["Tensile Yield Strength"],
+    Values=[["410000000 [Pa]"]])
+matlProp4 = material1.GetProperty(Name="Compressive Yield Strength")
+matlProp4.SetData(
+    Variables=["Compressive Yield Strength"],
+    Values=[["410000000 [Pa]"]])
+matlProp5 = material1.GetProperty(Name="Tensile Ultimate Strength")
+matlProp5.SetData(
+    Variables=["Tensile Ultimate Strength"],
+    Values=[["640000000 [Pa]"]])
+matlProp2.SetVariableProperty(
+    VariableName="Young's Modulus",
+    Property="Unit",
+    Value="GPa")
+matlProp2.SetData(
+    Variables=["Young's Modulus"],
+    Values=[["206 [GPa]"]])
+matlProp2.SetVariableProperty(
+    VariableName="Young's Modulus",
+    Property="Unit",
+    Value="Pa")
+matlProp2.SetData(
+    Variables=["Young's Modulus"],
+    Values=[["206000000000 [Pa]"]])
+Save(Overwrite=True)
+modelComponent1 = system1.GetComponent(Name="Model")
+modelComponent1.Refresh()
+geometry1.SetFile(FilePath="C:/Users/lenna/Desktop/Simulation_in_der_Gerätetechnik/FEM/Etappe 1/Lasche_19.step")
+modelComponent1.Refresh()
+model1 = system1.GetContainer(ComponentName="Model")
+model1.Edit()
+model1.Exit()
+Save(Overwrite=True)
