@@ -2,15 +2,16 @@
 <Storage>
   <Project Version="9.1">
     <base-designpoint-name valType="String">0</base-designpoint-name>
-    <timestamp-max valType="Int64">7756</timestamp-max>
+    <timestamp-max valType="Int64">8350</timestamp-max>
     <framework-build-version valType="String">23.1.153.0</framework-build-version>
     <external-version-string valType="String">2023 R1</external-version-string>
-    <last-saved-utc valType="String">04/16/2023 15:55:40</last-saved-utc>
+    <last-saved-utc valType="String">04/19/2023 18:49:16</last-saved-utc>
     <managed-categories valType="String">[report, misc, progress]</managed-categories>
     <logHistory valType="StringArray">
       <ArrayEntry Index="0">lenna@LG-WIN:C:\Users\lenna\AppData\Local\Temp\WorkbenchLogs\CoreEvents16168.log</ArrayEntry>
       <ArrayEntry Index="1">lenna@LG-WIN:C:\Users\lenna\AppData\Local\Temp\WorkbenchLogs\CoreEvents12080.log</ArrayEntry>
       <ArrayEntry Index="2">lenna@LG-WIN:C:\Users\lenna\AppData\Local\Temp\WorkbenchLogs\CoreEvents11952.log</ArrayEntry>
+      <ArrayEntry Index="3">lenna@LG-WIN:C:\Users\lenna\AppData\Local\Temp\WorkbenchLogs\CoreEvents4340.log</ArrayEntry>
     </logHistory>
     <expression-scope-container valType="String">Parameters</expression-scope-container>
     <project-type valType="String">WB2</project-type>
@@ -412,7 +413,7 @@
       <Object Name="/FileContainer/FileReference:F3" Version="1.0">
         <class-type valType="String">FileReference</class-type>
         <object-name valType="String">F3</object-name>
-        <member-data valType="String">{"DisplayText": "act.dat", "FileType": $$8f330c17-235e-4d5e-a9ae-b3beca14c2c2, "DependentFiles": [], "ContainerAssociations": [], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\act.dat", "ReferenceCount": 15}</member-data>
+        <member-data valType="String">{"DisplayText": "act.dat", "FileType": $$8f330c17-235e-4d5e-a9ae-b3beca14c2c2, "DependentFiles": [], "ContainerAssociations": [], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\act.dat", "ReferenceCount": 16}</member-data>
       </Object>
       <Object Name="/FileContainer/FileReference:F4" Version="1.0">
         <class-type valType="String">FileReference</class-type>
@@ -490,75 +491,9 @@
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 7746, "Input": 1473, "Output": 1473}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 8346, "Input": 1473, "Output": 1473}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
       <contains-significant-data valType="Boolean">false</contains-significant-data>
-      <Object Name="/Messages/StoredMessage:Message" Version="1.0">
-        <class-type valType="String">StoredMessage</class-type>
-        <object-name valType="String">Message</object-name>
-        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Information", "MessageCategory": "None", "Summary": "Die Installation von Microsoft Office Excel konnte nicht gefunden werden. Das Microsoft Office Excel-Komponentensystem ist nicht verfügbar.", "Details": None, "Association": "", "DateTimeStamp": 04/15/2023 17:57:04, "Visibility": "Information", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
-      </Object>
-      <Object Name="/Messages/StoredMessage:Message 1" Version="1.0">
-        <class-type valType="String">StoredMessage</class-type>
-        <object-name valType="String">Message 1</object-name>
-        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": r"Aktualisierung fehlgeschlagen Komponente Modell in System Statisch-mechanische Analyse. Geometriedatei nicht vorhanden: C:\Users\lenna\Desktop\FEM\Etappe 1\Lasche_19.step. Muss Komponente Geometrie in System Statisch-mechanische Analyse aktualisiert werden?", "Details": None, "Association": "", "DateTimeStamp": 04/15/2023 18:23:07, "Visibility": "Warning", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
-      </Object>
-      <Object Name="/Messages/StoredMessage:Message 2" Version="1.0">
-        <class-type valType="String">StoredMessage</class-type>
-        <object-name valType="String">Message 2</object-name>
-        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": "Aktualisieren von Komponente Modell in Statisch-mechanische Analyse ist fehlgeschlagen.  Fehler beim Update von Zelle Modell in System Statisch-mechanische Analyse. Die Meldungen in Mechanical liefern weitere Informationen.", "Details": None, "Association": "", "DateTimeStamp": 04/15/2023 18:58:20, "Visibility": "Error", "MessageSourceContainer": None, "MessageSourceEntity": $$2ddca943-a328-42e7-b97e-3b4863fa1ce8, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
-      </Object>
-      <Object Name="/Messages/StoredMessage:Message 3" Version="1.0">
-        <class-type valType="String">StoredMessage</class-type>
-        <object-name valType="String">Message 3</object-name>
-        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Warning", "MessageCategory": "None", "Summary": r"""Die folgende Projektdatei wurde möglicherweise nicht gesichert, bevor sie modifiziert wurde:
-C:\Users\lenna\Desktop\Simulation_in_der_Gerätetechnik\FEM\Etappe 1\FEM1_Ansys_19_files\dp0\SYS\MECH\file.aapresults""", "Details": None, "Association": "", "DateTimeStamp": 04/16/2023 15:06:15, "Visibility": "Warning", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
-      </Object>
-      <Object Name="/Messages/StoredMessage:Message 4" Version="1.0">
-        <class-type valType="String">StoredMessage</class-type>
-        <object-name valType="String">Message 4</object-name>
-        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": "The given key was not present in the dictionary.", "Details": """System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
-   at System.ThrowHelper.ThrowKeyNotFoundException()
-   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
-   at Ansys.EngineeringData.Validation.ResultCache.LogValidation(IDataVariable variable, DataValidationResult dataValidationResult)
-   at Ansys.EngineeringData.Validation.ValidateMaterialVariable.ValidateVariable(IDataVariable variable, IVariableTable hostPropertyData, ISortedVariableTable hostPropertyDataSorted, Object material)
-   at Ansys.EngineeringData.Validation.ResultCache.GetValidation(IDataVariable variable, IVariableTable hostSheet, Object rootObject, String&amp; message, IFixValidation&amp; fixValidation)
-   at Ansys.EngineeringData.Validation.ValidateMaterialPropertyData.Validate(IMaterial hostMaterial, IVariableTable propertyData)
-   at Ansys.EngineeringData.Validation.ResultCache.GetValidation(IVariableTable sheet, Object rootObject, String&amp; message, IFixValidation&amp; fixValidation)
-   at Ansys.EngineeringData.State.AnsysMaterialStateCheck.CheckState(Object objMaterial, Boolean&amp; isSupported)
-   at Ansys.EngineeringData.State.StateCheck.GetState(Object edObject)
-   at Ansys.EngineeringData.State.ResultCache.GetState(Object objUnknown)
-   at Ansys.EngineeringData.Commands.GetEngineeringDataCellState.Execute(IQueryContext context)
-   at Ansys.Core.Commands.Concurrency.QueryWorkUnit.executeInContext(CommandContext subContext, IExecutionEngineCallback tracer)
-   at Ansys.Core.Commands.Concurrency.BaseWorkUnit.doExecute(IExecutionEngineCallback executionEngine, CommandContext subContext)
-   at Ansys.Core.Commands.Concurrency.BaseWorkUnit.Execute(IExecutionEngineCallback executionEngine, Boolean dontCatchExceptions)
---- Ansys.Core.Commands.CommandFailedException: The given key was not present in the dictionary.
-CommandName: EngData.GetEngineeringDataCellState(Container=\"Engineering Data\", DefaultState={\"State\": UpToDate, \"ComponentQuickHelpId\": None, \"IsInterrupted\": False})
-   at Ansys.Core.Commands.CommandAsyncResult.RethrowFailureException(Exception e)
-   at Ansys.Core.Commands.CommandAsyncResult.Wait(Int32 milliSecondsTimeout, Boolean exitContext)
-   at Ansys.Core.Commands.Core.OutputArgBase.Wait()
-   at Ansys.Core.Commands.Output`1.Get()
-   at Ansys.ProjectSchematic.Queries.GetComponentStateQuery.Execute(IQueryContext context)
-   at Ansys.Core.Commands.Concurrency.QueryWorkUnit.executeInContext(CommandContext subContext, IExecutionEngineCallback tracer)
-   at Ansys.Core.Commands.Concurrency.BaseWorkUnit.doExecute(IExecutionEngineCallback executionEngine, CommandContext subContext)
-   at Ansys.Core.Commands.Concurrency.BaseWorkUnit.Execute(IExecutionEngineCallback executionEngine, Boolean dontCatchExceptions)
---- Ansys.Core.Commands.CommandFailedException: The given key was not present in the dictionary.
-CommandName: GetComponentState(Component=\"/Schematic/Component:Engineering Data 3\")
-   at Ansys.Core.Commands.CommandAsyncResult.RethrowFailureException(Exception e)
-   at Ansys.Core.Commands.CommandAsyncResult.Wait(Int32 milliSecondsTimeout, Boolean exitContext)
-   at Ansys.ProjectSchematic.Queries.GetComponentStateQuery.InvokeAndWait(IQueryContext context, DataReference Component)
-   at Ansys.ProjectSchematic.Queries.GetAllDisplayStatesQuery.Execute(IQueryContext context)
-   at Ansys.Core.Commands.Concurrency.QueryWorkUnit.executeInContext(CommandContext subContext, IExecutionEngineCallback tracer)
-   at Ansys.Core.Commands.Concurrency.BaseWorkUnit.doExecute(IExecutionEngineCallback executionEngine, CommandContext subContext)
-   at Ansys.Core.Commands.Concurrency.BaseWorkUnit.Execute(IExecutionEngineCallback executionEngine, Boolean dontCatchExceptions)
---- Ansys.Core.Commands.CommandFailedException: The given key was not present in the dictionary.
-CommandName: GetAllDisplayStates()
-   at Ansys.Core.Commands.CommandAsyncResult.RethrowFailureException(Exception e)
-   at Ansys.Core.Commands.CommandAsyncResult.Wait(Int32 milliSecondsTimeout, Boolean exitContext)
-   at Ansys.ProjectSchematic.Queries.GetAllDisplayStatesQuery.InvokeAndWait(IQueryContext context)
-   at Ansys.ProjectSchematic.View.ProjectSchematicViewCellStateEngine.UpdateStates(Boolean setStates)
-""", "Association": "", "DateTimeStamp": 04/16/2023 17:54:12, "Visibility": "Error", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
-      </Object>
     </Container>
     <Container Name="Parameters" Version="1.0">
       <container-type valType="String">Ansys.ParameterManager.ParameterManagerAddin:parameters</container-type>
@@ -883,7 +818,7 @@ CommandName: GetAllDisplayStates()
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 6845, "Input": 1794, "Output": 1794}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 8344, "Input": 1794, "Output": 1794}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
       <contains-significant-data valType="Boolean">false</contains-significant-data>
     </Container>
