@@ -1,0 +1,45 @@
+# encoding: utf-8
+# 2023 R1
+SetScriptVersion(Version="23.1.153")
+system1 = GetSystem(Name="SYS")
+model1 = system1.GetContainer(ComponentName="Model")
+model1.Edit()
+system1.DisplayText = "Linienlast"
+system2 = GetSystem(Name="SYS 1")
+system2.DisplayText = "Flächenlast"
+system3 = GetSystem(Name="SYS 2")
+system3.DisplayText = "Eigengewicht"
+system3.DisplayText = "Eigengewicht (Schwerkraft)"
+system4 = GetSystem(Name="SYS 3")
+system4.DisplayText = "Rotation"
+Save(Overwrite=True)
+system1.Copy(KeepConnections=True)
+model1.Exit()
+system5 = GetSystem(Name="SYS 4")
+system5.DisplayText = "Thermisch"
+system5.DisplayText = "Thermisch (Abkühlung)"
+schematicSettings1 = GetSchematicSettings()
+schematicSettings1.Notes = "Hello"
+schematicSettings1.Notes = "Simulation des Gummipuffers unter verschiedenen Einflüssen"
+system6 = GetSystem(Name="SYS 5")
+system6.DisplayText = "2D-Modell"
+geometryComponent1 = system6.GetComponent(Name="Geometry")
+geometryComponent1.Notes = "Hello"
+geometryComponent1.Notes = ""
+geometryComponent1.Reset()
+geometry1 = system6.GetContainer(ComponentName="Geometry")
+geometry1.Edit(IsSpaceClaimGeometry=True)
+Save(Overwrite=True)
+geometry1.Exit()
+Save(Overwrite=True)
+modelComponent1 = system6.GetComponent(Name="Model")
+modelComponent1.Refresh()
+model2 = system6.GetContainer(ComponentName="Model")
+model2.Edit()
+model2.Exit()
+geometry1.Edit(IsSpaceClaimGeometry=True)
+geometry1.Exit()
+model2.Edit()
+Save(Overwrite=True)
+model2.Exit()
+Save(Overwrite=True)

@@ -1,0 +1,121 @@
+# encoding: utf-8
+# 2023 R1
+SetScriptVersion(Version="23.1.153")
+Save(Overwrite=True)
+template1 = GetTemplate(
+    TemplateName="Static Structural",
+    Solver="ANSYS")
+system1 = template1.CreateSystem()
+system1.DisplayText = "Gummipuffer"
+engineeringData1 = system1.GetContainer(ComponentName="Engineering Data")
+engineeringData1.Import(
+    Source="C:/Users/lenna/Desktop/Simulation_in_der_Gerätetechnik/FEM/Technische_Daten.xml",
+    Company="ANSYS",
+    ProviderName="Disk")
+material1 = engineeringData1.GetMaterial(Name="Baustahl")
+material1.Delete()
+matl1 = engineeringData1.CreateMaterial(Name="Gummi-Nitril")
+matlProp1 = matl1.CreateProperty(
+    Name="Elasticity",
+    Behavior="Isotropic",
+    Qualifiers={"Definition": "", "Behavior": "Isotropic"})
+unitSystem1 = SetProjectUnitSystem(UnitSystemName="NMMTON_STANDARD")
+unitSystem2 = SetProjectUnitSystem(UnitSystemName="MKS_STANDARD")
+matlProp1.SetData(
+    Index=-1,
+    Variables=["Poisson's Ratio"],
+    Values=[["0.48"]])
+matlProp1.SetVariableProperty(
+    VariableName="Young's Modulus",
+    Property="Unit",
+    Value="MPa")
+matlProp1.SetData(
+    Variables=["Young's Modulus"],
+    Values=[["7.8886090522101181E-31 [MPa]"]])
+matlProp1.SetData(
+    Variables=["Young's Modulus"],
+    Values=[["12 [MPa]"]])
+matlProp1.SetVariableProperty(
+    VariableName="Young's Modulus",
+    Property="Unit",
+    Value="Pa")
+matlProp1.SetData(
+    Variables=["Young's Modulus"],
+    Values=[["12000000 [Pa]"]])
+matlProp1.SetVariableProperty(
+    VariableName="Young's Modulus",
+    Property="Unit",
+    Value="MPa")
+matlProp1.SetData(
+    Variables=["Young's Modulus"],
+    Values=[["12 [MPa]"]])
+matlProp2 = matl1.CreateProperty(
+    Name="Tensile Yield Strength",
+    Qualifiers={"Definition": "", "Behavior": ""})
+matlProp3 = matl1.CreateProperty(
+    Name="Compressive Ultimate Strength",
+    Qualifiers={"Definition": "", "Behavior": ""})
+matlProp4 = matl1.CreateProperty(
+    Name="Tensile Ultimate Strength",
+    Qualifiers={"Definition": "", "Behavior": ""})
+matlProp2.Delete()
+matlProp4.SetVariableProperty(
+    VariableName="Tensile Ultimate Strength",
+    Property="Unit",
+    Value="MPa")
+matlProp4.SetData(
+    Index=-1,
+    Variables=["Tensile Ultimate Strength"],
+    Values=[["10 [MPa]"]])
+matlProp3.SetData(
+    Index=-1,
+    Variables=["Compressive Ultimate Strength"],
+    Values=[["110 [Pa]"]])
+matlProp3.SetVariableProperty(
+    VariableName="Compressive Ultimate Strength",
+    Property="Unit",
+    Value="MPa")
+matlProp3.SetData(
+    Variables=["Compressive Ultimate Strength"],
+    Values=[["0.00010999999999999999 [MPa]"]])
+matlProp3.SetData(
+    Variables=["Compressive Ultimate Strength"],
+    Values=[["110 [MPa]"]])
+matlProp5 = matl1.CreateProperty(
+    Name="Coefficient of Thermal Expansion",
+    Definition="Secant",
+    Behavior="Isotropic",
+    Qualifiers={"Definition": "Secant", "Behavior": "Isotropic"})
+matlProp5.SetVariableProperty(
+    SheetName="Coefficient of Thermal Expansion",
+    SheetQualifiers={"Definition": "Secant", "Behavior": "Isotropic"},
+    VariableName="Coefficient of Thermal Expansion",
+    Property="Unit",
+    Value="K^-1")
+matlProp5.SetData(
+    SheetName="Coefficient of Thermal Expansion",
+    SheetQualifiers={"Definition": "Secant", "Behavior": "Isotropic"},
+    Index=-1,
+    Variables=["Coefficient of Thermal Expansion"],
+    Values=[["0.00022 [K^-1]"]])
+matlProp5.SetVariableProperty(
+    SheetName="Coefficient of Thermal Expansion",
+    SheetQualifiers={"Definition": "Secant", "Behavior": "Isotropic"},
+    VariableName="Coefficient of Thermal Expansion",
+    Property="Unit",
+    Value="C^-1")
+matlProp5.SetData(
+    SheetName="Coefficient of Thermal Expansion",
+    SheetQualifiers={"Definition": "Secant", "Behavior": "Isotropic"},
+    Variables=["Coefficient of Thermal Expansion"],
+    Values=[["0.00022 [C^-1]"]])
+Save(Overwrite=True)
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+geometry1.SetFile(FilePath="C:/Users/lenna/Desktop/Simulation_in_der_Gerätetechnik/FEM/Etappe 2/Gummipuffer_19.step")
+modelComponent1 = system1.GetComponent(Name="Model")
+modelComponent1.Refresh()
+model1 = system1.GetContainer(ComponentName="Model")
+model1.Edit()
+Save(Overwrite=True)
+model1.Exit()
+Save(Overwrite=True)
