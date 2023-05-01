@@ -1,0 +1,46 @@
+# encoding: utf-8
+# 2023 R1
+SetScriptVersion(Version="23.1.153")
+system1 = GetSystem(Name="SYS 5")
+model1 = system1.GetContainer(ComponentName="Model")
+model1.Edit()
+model1.Exit()
+Save(Overwrite=True)
+model1.Edit()
+Save(Overwrite=True)
+model1.Exit()
+Save(Overwrite=True)
+system2 = GetSystem(Name="SYS 8")
+system2.DisplayText = "2D-Flächenlasst"
+system2.DisplayText = "2D-Flächenlast"
+system1.DisplayText = "2D-Linienlast"
+system3 = GetSystem(Name="SYS 6")
+system3.DisplayText = "2D-Thermisch (Abkühlung)"
+system4 = GetSystem(Name="SYS 7")
+system4.DisplayText = "2D-Linienlast mit"
+system4.DisplayText = "2D-Linienlast (non-linear)"
+Save(Overwrite=True)
+system3.DisplayText = "2D-Flächenlast"
+system4.DisplayText = "2D-Thermisch (Abkühlung)"
+system2.DisplayText = "2D-Linienlast gr. Verformung"
+system1.Copy(KeepConnections=True)
+system5 = GetSystem(Name="SYS 9")
+system5.DisplayText = "Material nichtlinear"
+favorites1 = EngData.LoadFavoriteItems()
+library1 = EngData.OpenLibrary(
+    Name="Hyperelastic Materials",
+    Source="Hyperelastic_Materials.xml")
+engineeringData1 = system5.GetContainer(ComponentName="Engineering Data")
+matl1 = engineeringData1.ImportMaterial(
+    Name="Neoprene Rubber",
+    Source="Hyperelastic_Materials.xml")
+Save(Overwrite=True)
+geometry1 = system5.GetContainer(ComponentName="Geometry")
+geometry1.Edit(IsSpaceClaimGeometry=True)
+geometry1.Exit()
+modelComponent1 = system5.GetComponent(Name="Model")
+modelComponent1.Refresh()
+model2 = system5.GetContainer(ComponentName="Model")
+model2.Edit()
+model2.Exit()
+Save(Overwrite=True)

@@ -93,7 +93,7 @@
           </PropertyData>
           <PropertyData property="pr2">
             <Data format="string">-</Data>
-            <ParameterValue parameter="pa10" format="float">
+            <ParameterValue parameter="pa13" format="float">
               <Data>110</Data>
               <Qualifier name="Variable Type">Dependent</Qualifier>
               <Qualifier name="Offset">0 [MPa]</Qualifier>
@@ -101,9 +101,9 @@
               <Qualifier name="Units">MPa</Qualifier>
             </ParameterValue>
           </PropertyData>
-          <PropertyData property="pr3">
+          <PropertyData property="pr5">
             <Data format="string">-</Data>
-            <ParameterValue parameter="pa11" format="float">
+            <ParameterValue parameter="pa15" format="float">
               <Data>10</Data>
               <Qualifier name="Variable Type">Dependent</Qualifier>
               <Qualifier name="Offset">0 [MPa]</Qualifier>
@@ -111,7 +111,7 @@
               <Qualifier name="Units">MPa</Qualifier>
             </ParameterValue>
           </PropertyData>
-          <PropertyData property="pr4">
+          <PropertyData property="pr7">
             <Data format="string">-</Data>
             <Qualifier name="Definition">Secant</Qualifier>
             <Qualifier name="Behavior">Isotropic</Qualifier>
@@ -123,7 +123,7 @@
               <Qualifier name="Cached">True</Qualifier>
               <Qualifier name="ExtrapolationType">Projection to the Bounding Box</Qualifier>
             </ParameterValue>
-            <ParameterValue parameter="pa12" format="float">
+            <ParameterValue parameter="pa17" format="float">
               <Data>0.00022</Data>
               <Qualifier name="Variable Type">Dependent</Qualifier>
               <Qualifier name="Offset">0 [C^-1]</Qualifier>
@@ -143,11 +143,11 @@
               <Qualifier name="Lower Limit">Program Controlled</Qualifier>
             </ParameterValue>
           </PropertyData>
-          <PropertyData property="pr6">
+          <PropertyData property="pr8">
             <Data format="string">-</Data>
             <Qualifier name="Definition">Secant</Qualifier>
             <Qualifier name="Behavior">Isotropic</Qualifier>
-            <ParameterValue parameter="pa15" format="float">
+            <ParameterValue parameter="pa18" format="float">
               <Data>
               </Data>
               <Qualifier name="Variable Type">Dependent</Qualifier>
@@ -158,7 +158,7 @@
               <Data>Coefficient of Thermal Expansion</Data>
             </ParameterValue>
           </PropertyData>
-          <PropertyData property="pr7">
+          <PropertyData property="pr4">
             <Data format="string">-</Data>
             <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
             <ParameterValue parameter="pa4" format="string">
@@ -168,7 +168,7 @@
               <Qualifier name="Cached">True</Qualifier>
               <Qualifier name="ExtrapolationType">Projection to the Bounding Box</Qualifier>
             </ParameterValue>
-            <ParameterValue parameter="pa16" format="float">
+            <ParameterValue parameter="pa12" format="float">
               <Data>1000</Data>
               <Qualifier name="Variable Type">Dependent</Qualifier>
               <Qualifier name="Offset">0 [kg m^-3]</Qualifier>
@@ -229,7 +229,7 @@
           </PropertyData>
           <PropertyData property="pr2">
             <Data format="string">-</Data>
-            <ParameterValue parameter="pa13" format="float">
+            <ParameterValue parameter="pa10" format="float">
               <Data>0</Data>
               <Qualifier name="Variable Type">Dependent</Qualifier>
               <Qualifier name="Offset">0 [Pa]</Qualifier>
@@ -237,9 +237,9 @@
               <Qualifier name="Units">Pa</Qualifier>
             </ParameterValue>
           </PropertyData>
-          <PropertyData property="pr5">
+          <PropertyData property="pr3">
             <Data format="string">-</Data>
-            <ParameterValue parameter="pa14" format="float">
+            <ParameterValue parameter="pa11" format="float">
               <Data>410000000</Data>
               <Qualifier name="Variable Type">Dependent</Qualifier>
               <Qualifier name="Offset">0 [Pa]</Qualifier>
@@ -247,7 +247,7 @@
               <Qualifier name="Units">Pa</Qualifier>
             </ParameterValue>
           </PropertyData>
-          <PropertyData property="pr7">
+          <PropertyData property="pr4">
             <Data format="string">-</Data>
             <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
             <ParameterValue parameter="pa4" format="string">
@@ -257,7 +257,7 @@
               <Qualifier name="Cached">True</Qualifier>
               <Qualifier name="ExtrapolationType">Projection to the Bounding Box</Qualifier>
             </ParameterValue>
-            <ParameterValue parameter="pa16" format="float">
+            <ParameterValue parameter="pa12" format="float">
               <Data>7840</Data>
               <Qualifier name="Variable Type">Dependent</Qualifier>
               <Qualifier name="Offset">0 [kg m^-3]</Qualifier>
@@ -277,9 +277,9 @@
               <Qualifier name="Lower Limit">Program Controlled</Qualifier>
             </ParameterValue>
           </PropertyData>
-          <PropertyData property="pr8">
+          <PropertyData property="pr6">
             <Data format="string">-</Data>
-            <ParameterValue parameter="pa17" format="float">
+            <ParameterValue parameter="pa14" format="float">
               <Data>410000000</Data>
               <Qualifier name="Variable Type">Dependent</Qualifier>
               <Qualifier name="Offset">0 [Pa]</Qualifier>
@@ -287,9 +287,9 @@
               <Qualifier name="Units">Pa</Qualifier>
             </ParameterValue>
           </PropertyData>
-          <PropertyData property="pr3">
+          <PropertyData property="pr5">
             <Data format="string">-</Data>
-            <ParameterValue parameter="pa18" format="float">
+            <ParameterValue parameter="pa16" format="float">
               <Data>640000000</Data>
               <Qualifier name="Variable Type">Dependent</Qualifier>
               <Qualifier name="Offset">0 [Pa]</Qualifier>
@@ -297,7 +297,7 @@
               <Qualifier name="Units">Pa</Qualifier>
             </ParameterValue>
           </PropertyData>
-          <PropertyData property="pr4">
+          <PropertyData property="pr7">
             <Data format="string">-</Data>
             <Qualifier name="Definition">Secant</Qualifier>
             <Qualifier name="Behavior">Isotropic</Qualifier>
@@ -309,7 +309,7 @@
               <Qualifier name="Cached">True</Qualifier>
               <Qualifier name="ExtrapolationType">Projection to the Bounding Box</Qualifier>
             </ParameterValue>
-            <ParameterValue parameter="pa12" format="float">
+            <ParameterValue parameter="pa17" format="float">
               <Data>1.2e-05</Data>
               <Qualifier name="Variable Type">Dependent</Qualifier>
               <Qualifier name="Offset">0 [C^-1]</Qualifier>
@@ -329,11 +329,11 @@
               <Qualifier name="Lower Limit">Program Controlled</Qualifier>
             </ParameterValue>
           </PropertyData>
-          <PropertyData property="pr6">
+          <PropertyData property="pr8">
             <Data format="string">-</Data>
             <Qualifier name="Definition">Secant</Qualifier>
             <Qualifier name="Behavior">Isotropic</Qualifier>
-            <ParameterValue parameter="pa15" format="float">
+            <ParameterValue parameter="pa18" format="float">
               <Data>22</Data>
               <Qualifier name="Variable Type">Dependent</Qualifier>
               <Qualifier name="Offset">0 [C]</Qualifier>
@@ -614,41 +614,41 @@
           <Name>Temperature</Name>
           <Units name="Temperature" />
         </ParameterDetails>
+        <ParameterDetails id="pa13">
+          <Name>Compressive Ultimate Strength</Name>
+          <Units name="Stress" />
+        </ParameterDetails>
+        <ParameterDetails id="pa15">
+          <Name>Tensile Ultimate Strength</Name>
+          <Units name="Stress" />
+        </ParameterDetails>
         <ParameterDetails id="pa10">
           <Name>Compressive Ultimate Strength</Name>
           <Units name="Stress" />
         </ParameterDetails>
         <ParameterDetails id="pa11">
-          <Name>Tensile Ultimate Strength</Name>
-          <Units name="Stress" />
-        </ParameterDetails>
-        <ParameterDetails id="pa12">
-          <Name>Coefficient of Thermal Expansion</Name>
-          <Units name="InvTemp1" />
-        </ParameterDetails>
-        <ParameterDetails id="pa15">
-          <Name>Zero-Thermal-Strain Reference Temperature</Name>
-          <Units name="Temperature" />
-        </ParameterDetails>
-        <ParameterDetails id="pa13">
-          <Name>Compressive Ultimate Strength</Name>
-          <Units name="Stress" />
-        </ParameterDetails>
-        <ParameterDetails id="pa14">
           <Name>Compressive Yield Strength</Name>
           <Units name="Stress" />
         </ParameterDetails>
-        <ParameterDetails id="pa16">
+        <ParameterDetails id="pa12">
           <Name>Density</Name>
           <Units name="Density" />
         </ParameterDetails>
-        <ParameterDetails id="pa17">
+        <ParameterDetails id="pa14">
           <Name>Tensile Yield Strength</Name>
           <Units name="Stress" />
         </ParameterDetails>
-        <ParameterDetails id="pa18">
+        <ParameterDetails id="pa16">
           <Name>Tensile Ultimate Strength</Name>
           <Units name="Stress" />
+        </ParameterDetails>
+        <ParameterDetails id="pa17">
+          <Name>Coefficient of Thermal Expansion</Name>
+          <Units name="InvTemp1" />
+        </ParameterDetails>
+        <ParameterDetails id="pa18">
+          <Name>Zero-Thermal-Strain Reference Temperature</Name>
+          <Units name="Temperature" />
         </ParameterDetails>
         <ParameterDetails id="pa19">
           <Name>Specific Heat</Name>
@@ -710,22 +710,22 @@
           <Name>Compressive Ultimate Strength</Name>
         </PropertyDetails>
         <PropertyDetails id="pr3">
-          <Name>Tensile Ultimate Strength</Name>
-        </PropertyDetails>
-        <PropertyDetails id="pr4">
-          <Name>Coefficient of Thermal Expansion</Name>
-        </PropertyDetails>
-        <PropertyDetails id="pr5">
           <Name>Compressive Yield Strength</Name>
         </PropertyDetails>
-        <PropertyDetails id="pr6">
-          <Name>Zero-Thermal-Strain Reference Temperature</Name>
-        </PropertyDetails>
-        <PropertyDetails id="pr7">
+        <PropertyDetails id="pr4">
           <Name>Density</Name>
         </PropertyDetails>
-        <PropertyDetails id="pr8">
+        <PropertyDetails id="pr5">
+          <Name>Tensile Ultimate Strength</Name>
+        </PropertyDetails>
+        <PropertyDetails id="pr6">
           <Name>Tensile Yield Strength</Name>
+        </PropertyDetails>
+        <PropertyDetails id="pr7">
+          <Name>Coefficient of Thermal Expansion</Name>
+        </PropertyDetails>
+        <PropertyDetails id="pr8">
+          <Name>Zero-Thermal-Strain Reference Temperature</Name>
         </PropertyDetails>
         <PropertyDetails id="pr9">
           <Name>Specific Heat</Name>
@@ -755,13 +755,13 @@
     <Materials>
       <Material>
         <Name>Gummi-Nitril</Name>
-        <DataTransferID>bc7c9e9a-e793-467c-a5f2-2a8c3ab5e07f</DataTransferID>
-        <PreviousTransferIDs>858c58b2-a09a-4156-b421-bbd644542cd6,,</PreviousTransferIDs>
+        <DataTransferID>8c62a650-1619-4cb2-a2b9-3baba4c54e95</DataTransferID>
+        <PreviousTransferIDs>858c58b2-a09a-4156-b421-bbd644542cd6,,bc7c9e9a-e793-467c-a5f2-2a8c3ab5e07f,,</PreviousTransferIDs>
       </Material>
       <Material>
         <Name>C35</Name>
-        <DataTransferID>c04b25da-ad11-440b-a81b-79d2d71ebb56</DataTransferID>
-        <PreviousTransferIDs>d228d30e-4b76-430f-82d3-878c7434de68,,</PreviousTransferIDs>
+        <DataTransferID>dd597930-caba-40df-9148-c0c19d0eb00c</DataTransferID>
+        <PreviousTransferIDs>d228d30e-4b76-430f-82d3-878c7434de68,,c04b25da-ad11-440b-a81b-79d2d71ebb56,,</PreviousTransferIDs>
       </Material>
     </Materials>
   </ANSYSWBTransferData>
